@@ -18,11 +18,13 @@ public class ReviewsRepositoryTest {
     public void t1shouldFindReviewOne() {
         underTest = new ReviewRepository(reviewOne);
         Review foundReview = underTest.findOne(1L);
-        assertEquals(reviewOne, foundReview); }
+        assertEquals(reviewOne, foundReview);
+    }
 
     @Test
     public void t2shouldFindReviewOneAndReviewTwo() {
         underTest = new ReviewRepository(reviewOne, reviewTwo);
         Collection<Review> foundReviews = underTest.findAll();
-        assertThat(foundReviews).contains(reviewOne, reviewTwo); }
+        assertThat(foundReviews).contains(reviewOne, reviewTwo);
+    }
 }

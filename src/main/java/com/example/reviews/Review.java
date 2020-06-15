@@ -13,21 +13,27 @@ public class Review {
         this.title = title;
         this.imageUrl = imageUrl;
         this.reviewCategory = reviewCategory;
-        this.content = content; }
+        this.content = content;
+    }
 
     public Long getId() {
-        return id;}
+        return id;
+    }
 
     public String getTitle() {
-        return title;}
+        return title;
+    }
 
     public String getImageUrl() {
-        return imageUrl;}
+        return imageUrl;
+    }
 
     public String getReviewCategory() {
-        return reviewCategory;}
+        return reviewCategory;
+    }
 
     public String getContent() {
-        return content;}
+        return content;
+    }
 
 }
