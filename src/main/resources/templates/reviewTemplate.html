@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link href="./css/style.css" rel="stylesheet">
+    <title th:text="${reviewModel.title}">A review</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1 th:text="${reviewModel.title}">A Review</h1>
+</header>
+<main>
+    <ul>
+        <p><a href="/reviews">Back to the list of movies</a></p>
+        <div class="rating">
+            <input type="radio" name="star" id="star1"><label for="star1"></label>
+            <input type="radio" name="star" id="star2"><label for="star2"></label>
+            <input type="radio" name="star" id="star3"><label for="star3"></label>
+            <input type="radio" name="star" id="star4"><label for="star4"></label>
+            <input type="radio" name="star" id="star5"><label for="star5"></label>
+        </div>
+
+    </ul>
+    <img th:src="${reviewModel.imageUrl}"></img>
+</main>
+<footer>
+    <small>&copy wcci 2020</small>
+</footer>
+</body>
+</html>

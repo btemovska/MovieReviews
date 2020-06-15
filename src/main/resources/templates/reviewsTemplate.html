@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>A List of All Available Reviews</title>
+</head>
+<body>
+
+<header>
+    <h1>Movie Reviews</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+    </ul>
+</main>
+<img width="1470" src="./images/cinema.jpg">
+
+<footer>
+    <small>&copy wcci 2020</small>
+</footer>
+
+</body>
+</html>
